@@ -1,0 +1,953 @@
+<div class="min-h-screen bg-white">
+  <!-- Hero Section -->
+  <section class="hero-section animate-fade-up">
+
+    <div class="video-background">
+      <!-- <video autoplay muted loop playsinline poster="../../../assets/helfermitherzHeroBanner.mp4" class="video-content">
+        <source src="../../../assets/helfermitherzHeroBanner.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video> -->
+      <video autoplay width="320" height="240" [muted]="true" playsinline loop
+        class="bg-video video-content w-full h-full object-cover transition-opacity">
+        <source src="../../../assets/helfermitherzHeroBanner.mp4" type="video/mp4">
+      </video>
+      <div class="video-overlay"></div>
+    </div>
+
+    <!-- Decorative background patterns -->
+    <div class="hero-decorative-bg">
+      <div class="hero-blur hero-blur-1"></div>
+      <div class="hero-blur hero-blur-2"></div>
+      <div class="hero-blur hero-blur-3"></div>
+    </div>
+
+    <!-- Floating decorative elements -->
+    <div class="floating-heart">
+      <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path
+          d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+        </path>
+      </svg>
+    </div>
+    <div class="floating-sparkles">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 2L13.5 8.5L20 10L13.5 11.5L12 18L10.5 11.5L4 10L10.5 8.5L12 2Z"></path>
+      </svg>
+    </div>
+
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Hero Content -->
+        <div class="hero-content">
+          <!-- Trust badge -->
+          <div class="trust-badge animate-fade-up">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#fcd34d" stroke="#fcd34d">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+              </polygon>
+            </svg>
+            <span>Vertrauenswürdige Pflege seit 2020</span>
+          </div>
+
+          <h1 class="hero-title animate-fade-up">
+            Zuverlässige Hilfe für
+            <span class="gradient-text-animated">
+              Alltag
+              <svg class="hero-underline" height="8" viewBox="0 0 200 8" fill="none">
+                <path d="M0 4 Q100 8, 200 4" stroke="#009FDA" stroke-width="3" fill="none" />
+              </svg>
+            </span>
+            und Haushalt
+          </h1>
+
+          <p class="hero-subtitle animate-fade-up">
+            Professionelle Unterstützung mit
+            <span class="hero-accent">Herz</span> – für Senioren, Pflegebedürftige und alle, die Hilfe im Alltag
+            brauchen.
+          </p>
+
+          <div class="hero-buttons animate-fade-up">
+            <button class="btn btn-primary" (click)="scrollToForm()">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+              Kostenlose Beratung anfragen
+            </button>
+            <button class="btn btn-secondary" (click)="scrollToServices()">
+              Unsere Leistungen ansehen
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Hero Image Card -->
+        <div class="hero-image-wrapper animate-fade-up">
+          <div class="hero-image-blur"></div>
+          <div class="hero-image-card">
+            <div class="hero-image-content">
+              <div class="hero-heart-wrapper">
+                <div class="hero-heart-glow"></div>
+                <!-- <svg class="hero-heart-icon" width="112" height="112" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg> -->
+                <h1 class="text-white">Request a Demo</h1>
+              </div>
+              <form>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control border-0 border-bottom rounded-0 px-0" id="name"
+                        placeholder="Name">
+                      <label for="name" class="px-0 text-white">Full Name</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control border-0 border-bottom rounded-0 px-0" id="email"
+                        placeholder="Email">
+                      <label for="email" class="px-0 text-white">Email Address</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating mb-4">
+                      <input type="text" class="form-control border-0 border-bottom rounded-0 px-0" id="subject"
+                        placeholder="Subject">
+                      <label for="subject" class="px-0 text-white">Subject</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating mb-4">
+                      <textarea class="form-control border-0 border-bottom rounded-0 px-0" id="message"
+                        placeholder="Message" style="height: 120px"></textarea>
+                      <label for="message" class="px-0 text-white">Your Message</label>
+                    </div>
+                  </div>
+                  <div class="col-12 text-end">
+                    <button type="submit" class="btn btn-primary btn-lg rounded-pill px-5 shadow">
+                      Send Message <i class="bi bi-send-fill ms-2"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Introduction Section -->
+  <section class="intro-section animate-fade-up">
+    <div class="intro-wave"></div>
+
+    <div class="container">
+      <div class="intro-content">
+        <!-- Decorative icon -->
+        <div class="intro-icon-wrapper">
+          <div class="intro-icon-badge">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 8c0 2.5-1.5 5.5-5 8.5-3.5-3-5-6-5-8.5a5 5 0 1 1 10 0z"></path>
+            </svg>
+          </div>
+        </div>
+
+        <h2 class="intro-title animate-fade-up">
+          Wir helfen Ihnen, den Alltag zu meistern –
+          <span class="intro-highlight">
+            <span class="intro-highlight-text gradient-text-animated">mit Herz</span>
+            <div class="intro-highlight-bg"></div>
+          </span>
+          und Zuverlässigkeit
+        </h2>
+
+        <p class="intro-description animate-fade-up">
+          Bei <strong class="intro-brand">Helfer mit Herz GmbH</strong> bieten wir individuelle Unterstützung für
+          Senioren, Pflegebedürftige und alle, die Hilfe im Haushalt oder bei alltäglichen Aufgaben benötigen. Wir
+          organisieren zuverlässige Helferinnen und Helfer, die Sie genau dort unterstützen, wo Sie es brauchen.
+        </p>
+
+        <!-- Key Features -->
+        <div class="features-grid animate-fade-up">
+          <div class="feature-container">
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <div class="feature-card">
+              <div class="feature-icon-wrapper">
+                <div class="feature-icon-glow"></div>
+                <div class="feature-icon-bg">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="feature-title">Keine Plattform</h3>
+              <p class="feature-text">Persönlicher Service statt anonymer Online-Vermittlung</p>
+            </div>
+          </div>
+
+          <div class="feature-container">
+            <div class="top"></div>
+            <div class="bottom"></div>
+              <div class="feature-card">
+                <div class="feature-icon-wrapper">
+                  <div class="feature-icon-glow"></div>
+                  <div class="feature-icon-bg">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="9" cy="7" r="4"></circle>
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                  </div>
+                </div>
+                <h3 class="feature-title">Keine Komplikationen</h3>
+                <p class="feature-text">Einfacher Ablauf, klare Kommunikation, schnelle Hilfe</p>
+              </div>
+            </div>
+
+          <div class="feature-container">
+            <div class="top"></div>
+            <div class="bottom"></div>
+              <div class="feature-card">
+                <div class="feature-icon-wrapper">
+                  <div class="feature-icon-glow"></div>
+                  <div class="feature-icon-bg">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                      </path>
+                      <path d="M12 5.67 8.2 9.48"></path>
+                    </svg>
+                  </div>
+                </div>
+                <h3 class="feature-title">Zuverlässige Hilfe</h3>
+                <p class="feature-text">Geprüfte Helfer, die wir persönlich kennen und empfehlen</p>
+              </div>
+            </div>
+        </div>
+
+        <button class="btn btn-primary intro-cta animate-fade-up" (click)="scrollToForm()">
+          Jetzt Gespräch vereinbaren
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section id="services" class="services-section animate-fade-up">
+    <div class="services-blur services-blur-1"></div>
+    <div class="services-blur services-blur-2"></div>
+
+    <div class="container animate-fade-up">
+      <div class="services-header">
+        <div class="services-badge">Unsere Services</div>
+        <h2 class="section-title">Unsere Leistungen</h2>
+        <p class="section-subtitle">Von Alltagsbegleitung bis Haushaltsreinigung – wir finden die passende Unterstützung
+          für Sie</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card animate-fade-up">
+          <div class="service-header">
+            <div class="service-icon-wrapper">
+              <div class="service-icon-glow service-glow-red"></div>
+              <div class="service-icon-bg service-bg-red">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="service-title">Alltagsbegleitung & Gesellschaft</h3>
+            <p class="service-description">Soziale Teilhabe und Unterstützung bei täglichen Aktivitäten</p>
+          </div>
+          <div class="service-content">
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-check">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <span>Spaziergänge und Begleitung zu Terminen</span>
+              </li>
+              <li class="service-item">
+                <div class="service-check">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <span>Vorlesen, Gesellschaftsspiele, Gespräche</span>
+              </li>
+              <li class="service-item">
+                <div class="service-check">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <span>Einkaufsbegleitung und kleine Besorgungen</span>
+              </li>
+            </ul>
+            <button class="btn btn-outline" (click)="scrollToForm()">
+              Mehr erfahren
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card animate-fade-up">
+          <div class="service-header">
+            <div class="service-icon-wrapper">
+              <div class="service-icon-glow service-glow-purple"></div>
+              <div class="service-icon-bg service-bg-purple">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+              </div>
+            </div>
+            <h3 class="service-title">Haushaltshilfe</h3>
+            <p class="service-description">Entlastung bei alltäglichen Haushaltsaufgaben</p>
+          </div>
+          <div class="service-content">
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-check">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <span>Kochen und Mahlzeitenvorbereitung</span>
+              </li>
+              <li class="service-item">
+                <div class="service-check">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <span>Wäsche waschen, bügeln, aufräumen</span>
+              </li>
+              <li class="service-item">
+                <div class="service-check">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <span>Gartenpflege und kleinere Reparaturen</span>
+              </li>
+            </ul>
+            <button class="btn btn-outline" (click)="scrollToForm()">
+              Mehr erfahren
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card animate-fade-up">
+          <div class="service-header">
+            <div class="service-icon-wrapper">
+              <div class="service-icon-glow service-glow-yellow"></div>
+              <div class="service-icon-bg service-bg-yellow">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2L13.5 8.5L20 10L13.5 11.5L12 18L10.5 11.5L4 10L10.5 8.5L12 2Z"></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="service-title">Professionelle Hausreinigung</h3>
+            <p class="service-description">Gründliche Reinigung für ein sauberes Zuhause</p>
+          </div>
+          <div class="service-content">
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-check">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <span>Regelmäßige Wohnungsreinigung</span>
+              </li>
+              <li class="service-item">
+                <div class="service-check">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <span>Fenster putzen und Tiefenreinigung</span>
+              </li>
+              <li class="service-item">
+                <div class="service-check">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <span>Flexible Termine nach Ihren Wünschen</span>
+              </li>
+            </ul>
+            <button class="btn btn-outline" (click)="scrollToForm()">
+              Mehr erfahren
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card animate-fade-up">
+          <div class="service-header">
+            <div class="service-icon-wrapper">
+              <div class="service-icon-glow service-glow-green"></div>
+              <div class="service-icon-bg service-bg-green">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                  <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                </svg>
+              </div>
+            </div>
+            <h3 class="service-title">Kostenübernahme & Pflegekassen-Support</h3>
+            <p class="service-description">Unterstützung bei Anträgen und Abrechnungen</p>
+          </div>
+          <div class="service-content">
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-check">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <span>Beratung zu Entlastungsleistungen (§45b SGB XI)</span>
+              </li>
+              <li class="service-item">
+                <div class="service-check">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <span>Hilfe bei Anträgen und Kostenerstattung</span>
+              </li>
+              <li class="service-item">
+                <div class="service-check">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <span>Direkte Abrechnung mit Pflegekassen möglich</span>
+              </li>
+            </ul>
+            <button class="btn btn-outline" (click)="scrollToForm()">
+              Mehr erfahren
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Target Audience Section -->
+  <section class="audience-section animate-fade-up">
+    <div class="audience-blur-bg">
+      <div class="audience-blur audience-blur-1"></div>
+      <div class="audience-blur audience-blur-2"></div>
+    </div>
+
+    <div class="container audience-container">
+      <div class="audience-content">
+        <div class="audience-header animate-fade-up">
+          <div class="audience-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+            <span>Individuelle Betreuung</span>
+          </div>
+          <h2 class="audience-title">Für wen sind wir da?</h2>
+        </div>
+
+        <div class="audience-grid">
+          <div class="audience-card animate-fade-up">
+            <div class="audience-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="8.5" cy="7" r="4"></circle>
+                <polyline points="17 11 19 13 23 9"></polyline>
+              </svg>
+            </div>
+            <span>Senioren und ältere Menschen</span>
+          </div>
+          <div class="audience-card animate-fade-up">
+            <div class="audience-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+              </svg>
+            </div>
+            <span>Menschen mit Pflegebedarf</span>
+          </div>
+          <div class="audience-card animate-fade-up">
+            <div class="audience-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <span>Angehörige und Pflegende</span>
+          </div>
+          <div class="audience-card animate-fade-up">
+            <div class="audience-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z"></path>
+                <path d="M9 10h.01"></path>
+                <path d="M15 10h.01"></path>
+                <path d="M9.5 15a3.5 3.5 0 0 0 5 0"></path>
+              </svg>
+            </div>
+            <span>Personen nach Krankheit/OP</span>
+          </div>
+          <div class="audience-card audience-card-wide">
+            <div class="audience-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                <path d="M9 22v-4h6v4"></path>
+                <path d="M8 6h.01"></path>
+                <path d="M16 6h.01"></path>
+                <path d="M12 6h.01"></path>
+                <path d="M12 10h.01"></path>
+                <path d="M12 14h.01"></path>
+                <path d="M16 10h.01"></path>
+                <path d="M16 14h.01"></path>
+                <path d="M8 10h.01"></path>
+                <path d="M8 14h.01"></path>
+              </svg>
+            </div>
+            <span>Private Haushalte</span>
+          </div>
+        </div>
+
+        <div class="audience-cta animate-fade-up">
+          <button class="btn btn-white" (click)="scrollToForm()">
+            Die richtige Unterstützung finden
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="logo-section py-5 bg-light overflow-hidden">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h3 class="section-title">Unsere Partner</h3>
+      <h2 class="fw-bold">Vertrauen von führenden Unternehmen</h2>
+    </div>
+
+    <div class="logo-slider">
+      <div class="logo-track">
+        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 1"></div>
+        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 2"></div>
+        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 3"></div>
+        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 4"></div>
+        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 5"></div>
+        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 6"></div>
+
+        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 1"></div>
+        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 2"></div>
+        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 3"></div>
+        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 4"></div>
+        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 5"></div>
+        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 6"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Process Steps -->
+  <section class="process-section animate-fade-up">
+    <div class="container">
+      <div class="process-content">
+        <div class="process-header  animate-fade-up">
+          <div class="process-badge">Einfacher Prozess</div>
+          <h2 class="section-title">So einfach funktioniert's</h2>
+          <p class="section-subtitle">In drei einfachen Schritten zur passenden Unterstützung</p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-line"></div>
+
+          <!-- Step 1 -->
+          <div class="process-step animate-fade-up">
+            <div class="step-number-wrapper">
+              <div class="step-number-glow step-glow-cyan"></div>
+              <div class="step-number step-number-cyan">1</div>
+            </div>
+            <div class="step-icon-bg step-icon-cyan">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+            </div>
+            <h3 class="step-title">Anfrage senden</h3>
+            <p class="step-text">Teilen Sie uns Ihre Bedürfnisse über das Kontaktformular mit – schnell und
+              unkompliziert</p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="process-step animate-fade-up">
+            <div class="step-number-wrapper">
+              <div class="step-number-glow step-glow-purple"></div>
+              <div class="step-number step-number-purple">2</div>
+            </div>
+            <div class="step-icon-bg step-icon-purple">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+            </div>
+            <h3 class="step-title">Beratung erhalten</h3>
+            <p class="step-text">Wir rufen Sie zurück und besprechen Ihre Situation – persönlich und vertraulich</p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="process-step animate-fade-up">
+            <div class="step-number-wrapper">
+              <div class="step-number-glow step-glow-green"></div>
+              <div class="step-number step-number-green">3</div>
+            </div>
+            <div class="step-icon-bg step-icon-green">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <h3 class="step-title">Unterstützung organisieren</h3>
+            <p class="step-text">Wir vermitteln passende Helfer und kümmern uns um alle Details – Sie lehnen sich zurück
+            </p>
+          </div>
+        </div>
+
+        <div class="process-footer animate-fade-up">
+          <p class="process-footer-text">
+            <strong>Schnell, transparent, zuverlässig</strong> – so sollte Hilfe sein
+          </p>
+          <button class="btn btn-primary" (click)="scrollToForm()">
+            Jetzt starten
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section py-5 bg-white">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        
+        <div class="text-center mb-5 animate-fade-up">
+          <h3 class="section-title">Häufig Gestellte Fragen</h3>
+          <h2 class="fw-bold">Haben Sie Fragen? Wir haben Antworten</h2>
+          <p class="text-muted">Hier finden Sie Antworten auf die am häufigsten gestellten Fragen zu unseren Dienstleistungen.</p>
+        </div>
+
+        <div class="accordion accordion-flush shadow-sm rounded-4 overflow-hidden" id="faqAccordion">
+          
+          <div class="accordion-item border-bottom">
+            <h2 class="accordion-header">
+              <button class="accordion-button fw-bold p-4" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                Wie finde ich den passenden Alltagshelfer?
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-secondary p-4">
+                Nach Ihrer Anfrage führen wir ein persönliches Gespräch, um Ihre Bedürfnisse zu verstehen. Basierend darauf wählen wir einen Helfer aus unserem Team aus, der am besten zu Ihrer Situation und Persönlichkeit passt.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border-bottom">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed fw-bold p-4" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                Sind die Helfer versichert und geprüft?
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-secondary p-4">
+                Ja, absolute Sicherheit ist uns wichtig. Alle unsere Mitarbeiter sind haftpflichtversichert und müssen ein polizeiliches Führungszeugnis sowie persönliche Referenzen vorlegen, bevor sie Teil von HelferMitHerz werden.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item border-bottom">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed fw-bold p-4" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                Was kostet die Unterstützung pro Stunde?
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body text-secondary p-4">
+                Unsere Preise variieren je nach Art und Umfang der benötigten Hilfe. In einem kostenlosen Erstgespräch erstellen wir Ihnen ein transparentes Angebot ohne versteckte Kosten. Viele Leistungen können zudem über die Pflegekasse abgerechnet werden.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+          <p class="mb-2">Ihre Frage ist nicht dabei?</p>
+          <a routerLink="/contact-us" class="btn btn-primary rounded-pill px-4 shadow-sm">Kontaktieren Sie uns direkt</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Trust Indicators -->
+  <section class="trust-section animate-fade-up">
+    <div class="container">
+      <div class="trust-content">
+        <div class="trust-header">
+          <div class="trust-badge-header">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <span>Vertrauen & Qualität</span>
+          </div>
+          <h2 class="section-title">Warum Helfer mit Herz GmbH?</h2>
+        </div>
+
+        <div class="trust-grid">
+          <div class="trust-card animate-fade-up">
+            <div class="trust-check">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div>
+              <h3 class="trust-title">Menschlich & individuell</h3>
+              <p class="trust-text">Wir behandeln jeden Fall mit Herz und passen uns Ihren Bedürfnissen an</p>
+            </div>
+          </div>
+
+          <div class="trust-card animate-fade-up">
+            <div class="trust-check">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div>
+              <h3 class="trust-title">Geprüfte Helfer</h3>
+              <p class="trust-text">Alle Helfer kennen wir persönlich und empfehlen sie mit gutem Gewissen</p>
+            </div>
+          </div>
+
+          <div class="trust-card animate-fade-up">
+            <div class="trust-check">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div>
+              <h3 class="trust-title">Persönlicher Kontakt</h3>
+              <p class="trust-text">Kein Callcenter – Sie sprechen direkt mit Menschen, die sich kümmern</p>
+            </div>
+          </div>
+
+          <div class="trust-card animate-fade-up">
+            <div class="trust-check">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div>
+              <h3 class="trust-title">Klare Kommunikation</h3>
+              <p class="trust-text">Keine versteckten Kosten, keine komplizierten Verträge</p>
+            </div>
+          </div>
+
+          <div class="trust-card  animate-fade-up">
+            <div class="trust-check">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div>
+              <h3 class="trust-title">Transparente Leistungen</h3>
+              <p class="trust-text">Sie wissen genau, was Sie bekommen und was es kostet</p>
+            </div>
+          </div>
+
+          <div class="trust-card animate-fade-up">
+            <div class="trust-check">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div>
+              <h3 class="trust-title">Pflegekassen-Unterstützung</h3>
+              <p class="trust-text">Wir helfen bei Anträgen und Abrechnungen mit Ihrer Pflegekasse</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="trust-cta-card animate-fade-up">
+          <div class="trust-cta-blur trust-cta-blur-1"></div>
+          <div class="trust-cta-blur trust-cta-blur-2"></div>
+          <div class="trust-cta-content">
+            <svg class="trust-cta-icon" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+              </path>
+            </svg>
+            <p class="trust-cta-text">
+              Wir liefern nicht nur Dienstleistungen –
+              <span class="trust-cta-highlight">wir geben Ihnen Sicherheit</span> und Entlastung
+            </p>
+            <button class="btn btn-primary" (click)="scrollToForm()">
+              Rückruf anfordern
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lead Capture Form -->
+  <section id="contact-form" class="form-section animate-fade-up">
+    <div class="container">
+      <div class="form-card">
+        <div class="form-corner form-corner-top"></div>
+        <div class="form-corner form-corner-bottom"></div>
+
+        <div class="form-header animate-fade-up">
+          <div class="form-icon-wrapper">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+          </div>
+          <h2 class="form-title">Fordern Sie Ihre kostenlose Beratung an</h2>
+          <p class="form-subtitle">
+            Füllen Sie das Formular aus und wir melden uns zeitnah bei Ihnen.
+            <br class="form-break">
+            <strong>Kostenlos und unverbindlich.</strong>
+          </p>
+        </div>
+
+        <form class="contact-form animate-fade-up" (ngSubmit)="onSubmit()" #contactForm="ngForm">
+          <div class="form-group">
+            <label for="name" class="form-label">Ihr Name *</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Max Mustermann"
+              [(ngModel)]="formData.name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone" class="form-label">Telefonnummer *</label>
+            <input type="tel" id="phone" name="phone" class="form-input" placeholder="0123 456789"
+              [(ngModel)]="formData.phone" required />
+          </div>
+
+          <div class="form-group">
+            <label for="postalCode" class="form-label">Postleitzahl *</label>
+            <input type="text" id="postalCode" name="postalCode" class="form-input" placeholder="12345"
+              pattern="[0-9]{5}" [(ngModel)]="formData.postalCode" required />
+            <p class="form-helper">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+              Damit wir Ihnen Helfer aus Ihrer Region vermitteln können
+            </p>
+          </div>
+
+          <button type="submit" class="btn btn-form-submit" [disabled]="!contactForm.valid">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+            Jetzt Rückruf anfordern
+          </button>
+
+          <div class="form-privacy">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            Ihre Daten werden vertraulich behandelt und nicht an Dritte weitergegeben.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer-section animate-fade-up">
+    <div class="footer-blur-bg">
+      <div class="footer-blur footer-blur-1"></div>
+      <div class="footer-blur footer-blur-2"></div>
+    </div>
+
+    <div class="container footer-container">
+      <div class="footer-icon-wrapper">
+        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path
+            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+          </path>
+          <path d="M12 5.67 8.2 9.48"></path>
+        </svg>
+      </div>
+      <h2 class="footer-title">Sie sind nicht allein – wir sind für Sie da</h2>
+      <p class="footer-text">
+        Vertrauen Sie auf <strong class="footer-brand">Helfer mit Herz GmbH</strong> als verlässlichen Partner für Ihre
+        alltäglichen Herausforderungen. Gemeinsam finden wir die beste Lösung für Sie und Ihre Liebsten.
+      </p>
+      <button class="btn btn-footer" (click)="scrollToForm()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+          </path>
+        </svg>
+        Kontaktieren Sie uns heute
+      </button>
+
+      <div class="footer-bottom">
+        <p>© {{currentYear}} Helfer mit Herz GmbH. Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </footer>
+</div>

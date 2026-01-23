@@ -1,0 +1,104 @@
+/* Fade in animation for the header */
+.animate-fade-in {
+  animation: fadeInDown 0.8s ease-out;
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Service Card Styles */
+.service-card {
+  background: white;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* The Colorful Background Slide */
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #4f408a, #68419c, #96359b, #be09c7) !important;
+  transition: all 0.4s ease;
+  color: #ffffff !important;
+  z-index: -1;
+}
+
+/* Hover Effects */
+.service-card:hover {
+  color: #ffffff !important;
+}
+
+.service-card:hover::before {
+  top: 0;
+  color: white !important;
+}
+
+.service-card:hover .btn-outline-dark {
+  color: white !important;
+  border-color: white;
+}
+
+/* Icon Animation */
+.icon-box {
+  color: var(--accent-color);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover .icon-box {
+  color: white;
+}
+
+
+.service-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  background: #ffffff;
+  z-index: 1;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(45deg,
+      rgba(0, 8, 918, 0.3),
+      transparent);
+  border-top-right-radius: 100%;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(135deg, rgba(228, 0, 70, 0.2), transparent);
+    border-bottom-left-radius: 100%;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.service-card {
+  padding: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.service-container:hover .top, .service-container:hover .bottom {
+  background: none !important
+}

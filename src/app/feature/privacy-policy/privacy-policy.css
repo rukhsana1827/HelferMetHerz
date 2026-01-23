@@ -1,0 +1,23 @@
+:host {
+    display: block;
+    background-color: #f4f7f6;
+    padding: 20px 0;
+}
+
+section h3 {
+    color: #2c3e50;
+}
+
+p {
+    color: #4a4a4a;
+    line-height: 1.7;
+}
+
+.list-group-item {
+    border-bottom: none;
+    padding-left: 1.5rem;
+}
+
+.border-primary {
+    border-color: #0d6efd !important; /* Matches your brand color */
+}

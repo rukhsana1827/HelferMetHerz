@@ -1,0 +1,42 @@
+/* Custom Icon Styling */
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7f1ff; /* Light Bootstrap Primary */
+}
+
+/* Hover effect for feature items */
+.why-us-item {
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.why-us-item:hover {
+  background-color: #f8f9fa;
+}
+
+/* Entrance Animations */
+.animate-slide-in-left {
+  animation: slideInLeft 1s ease-out;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Background Color for icons if not using default Bootstrap */
+.bg-light-primary {
+  background-color: rgba(13, 110, 253, 0.1) !important;
+}
