@@ -1,0 +1,9 @@
+.fi {
+    font-size: larger;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
