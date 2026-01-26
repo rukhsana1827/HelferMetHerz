@@ -59,6 +59,7 @@
   display: block;
   opacity: 0;
   visibility: hidden;
+  display: none;
   transition: all 0.3s ease;
   transform: translateY(10px);
 }
@@ -69,14 +70,16 @@
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
+    display:block;
   }
 }
 
 @media (max-width: 991px) {
-  .mega-menu-static:hover {
+  .mega-menu-static:hover .mega-menu-content {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
+    display: block;
   }
   
 }
