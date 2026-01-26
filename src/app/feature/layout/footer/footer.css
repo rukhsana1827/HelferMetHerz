@@ -1,3 +1,11 @@
-a{
+a {
     text-decoration: none;
+}
+
+footer {
+    background: #f8eef9;
+}
+
+.footer {
+    background: linear-gradient(to right, #4f408a, #68419c, #96359b, #be09c7) !important;
 }
