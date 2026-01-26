@@ -44,3 +44,12 @@
 .animated-image {
   animation: 5s ease-in-out infinite zoom-in-out;
 }
+
+.text-primary {
+  color: #741579 !important;
+}
+
+.heading-icon {
+  font-size: 3rem;
+  color: #68419c;
+}

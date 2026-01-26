@@ -1,43 +1,51 @@
-<footer class="text-center text-lg-start">
+<footer class="text-center text-lg-start border-top bg-light">
   <div class="container p-4">
 
-    <div class="d-flex justify-content-center py-2">
-      <img src="../../../../assets/helfermitherz.png" height="100" alt="">
+    <div class="d-flex justify-content-center py-2 mb-4">
+      <img src="../../../../assets/helfermitherz.png" height="100" alt="Helfer mit Herz Logo">
     </div>
 
     <div class="row">
 
-      <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-        <h5 class="text-uppercase">Our Links</h5>
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase fw-bold small mb-3">Navigation</h5>
         <ul class="list-unstyled mb-0">
-          <li><a href="#!" class="text-dark">Home</a></li>
-          <li><a href="#!" class="text-dark">Services</a></li>
-          <li><a href="#!" class="text-dark">Why Us</a></li>
-          <li><a href="#!" class="text-dark">Contact Us</a></li>
+          <li class="mb-2"><a routerLink="/home" class="text-dark text-decoration-none hover-link">Startseite</a></li>
+          <li class="mb-2"><a routerLink="/why-us" class="text-dark text-decoration-none hover-link">Über uns</a></li>
+          <li class="mb-2"><a routerLink="/contact-us" class="text-dark text-decoration-none hover-link">Kontakt</a></li>
         </ul>
       </div>
 
-      <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-        <h5 class="text-uppercase">Social Media</h5>
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase fw-bold small mb-3">Leistungen</h5>
         <ul class="list-unstyled mb-0">
-          <li><a href="#!" class="text-dark">Facebook</a></li>
-          <li><a href="#!" class="text-dark">Instagram</a></li>
-          <li><a href="#!" class="text-dark">LinkedIn</a></li>
+          <li class="mb-2"><a routerLink="/services/service-alltagsbegleitung" class="text-dark text-decoration-none hover-link">Alltagsbegleitung</a></li>
+          <li class="mb-2"><a routerLink="/services/service-haushaltshilfe" class="text-dark text-decoration-none hover-link">Haushaltshilfe</a></li>
+          <li class="mb-2"><a routerLink="/services/service-hausreinigung" class="text-dark text-decoration-none hover-link">Hausreinigung</a></li>
+          <li class="mb-2"><a routerLink="/services/service-kostenübernahme" class="text-dark text-decoration-none hover-link">Kostenübernahme</a></li>
         </ul>
       </div>
 
-      <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-        <h5 class="text-uppercase">Legal</h5>
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase fw-bold small mb-3">Social Media</h5>
         <ul class="list-unstyled mb-0">
-          <li><a routerLink="/terms-of-service" class="text-dark">Terms & Conditions</a></li>
-          <li><a routerLink="/privacy-policy" class="text-dark">Privacy Policy</a></li>
+          <li class="mb-2"><a href="#!" class="text-dark text-decoration-none hover-link"><i class="bi bi-facebook me-2"></i>Facebook</a></li>
+          <li class="mb-2"><a href="#!" class="text-dark text-decoration-none hover-link"><i class="bi bi-instagram me-2"></i>Instagram</a></li>
+          <li class="mb-2"><a href="#!" class="text-dark text-decoration-none hover-link"><i class="bi bi-linkedin me-2"></i>LinkedIn</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase fw-bold small mb-3">Rechtliches</h5>
+        <ul class="list-unstyled mb-0">
+          <li class="mb-2"><a routerLink="/privacy-policy" class="text-dark text-decoration-none hover-link">Datenschutz</a></li>
+          <li class="mb-2"><a routerLink="/terms-of-service" class="text-dark text-decoration-none hover-link">AGB</a></li>
         </ul>
       </div>
     </div>
   </div>
 
-  <!-- Copyright -->
-  <div class="footer text-center p-3 text-white">
-    &copy; {{currentYear}} HelferMitHerz. All rights reserved.
+  <div class="footer text-center p-3 text-white" style="background-color: #4f408a;">
+    &copy; {{currentYear}} Helfer mit Herz. Alle Rechte vorbehalten.
   </div>
 </footer>

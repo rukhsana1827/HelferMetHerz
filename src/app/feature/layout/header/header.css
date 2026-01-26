@@ -72,6 +72,15 @@
   }
 }
 
+@media (max-width: 991px) {
+  .mega-menu-static:hover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+}
+
 /* Styling for the lists inside the menu */
 .menu-service-list li {
   font-size: 0.9rem;

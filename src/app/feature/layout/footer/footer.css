@@ -9,3 +9,8 @@ footer {
 .footer {
     background: linear-gradient(to right, #4f408a, #68419c, #96359b, #be09c7) !important;
 }
+
+.hover-link:hover {
+  color: #4f408a !important;
+  text-decoration: underline !important;
+}
