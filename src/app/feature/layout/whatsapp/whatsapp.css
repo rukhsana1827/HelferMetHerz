@@ -1,9 +1,10 @@
 .fi {
-    font-size: larger;
+    font-size: 35px;
 }
 
 .whatsapp-button {
     position: fixed;
     bottom: 20px;
     right: 20px;
+    color: #25d366 !important;
 }
