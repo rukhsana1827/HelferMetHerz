@@ -12,7 +12,25 @@ export const routes: Routes = [
             },
             { 
                 path: 'services', 
-                loadComponent: () => import('./feature/services/services').then(m => m.Services) 
+                // loadComponent: () => import('./feature/services/services').then(m => m.Services) ,
+                children: [
+                    {
+                        path: 'service-alltagsbegleitung',
+                        loadComponent: () => import('./feature/services/service-1/service-1').then(m => m.Service1)
+                    },
+                     {
+                        path: 'service-haushaltshilfe',
+                        loadComponent: () => import('./feature/services/service-2/service-2').then(m => m.Service2)
+                    },
+                     {
+                        path: 'service-hausreinigung',
+                        loadComponent: () => import('./feature/services/service-3/service-3').then(m => m.Service3)
+                    },
+                     {
+                        path: 'service-kostenübernahme',
+                        loadComponent: () => import('./feature/services/service-4/service-4').then(m => m.Service4)
+                    }
+                ]
             },
             { 
                 path: 'why-us', 

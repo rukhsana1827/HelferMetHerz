@@ -18,6 +18,6 @@ p {
     padding-left: 1.5rem;
 }
 
-.border-primary {
-    border-color: #0d6efd !important; /* Matches your brand color */
+.border-primary-top {
+    border-color: #68419c !important;
 }

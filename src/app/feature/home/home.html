@@ -3,10 +3,6 @@
   <section class="hero-section animate-fade-up">
 
     <div class="video-background">
-      <!-- <video autoplay muted loop playsinline poster="../../../assets/helfermitherzHeroBanner.mp4" class="video-content">
-        <source src="../../../assets/helfermitherzHeroBanner.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video> -->
       <video autoplay width="320" height="240" [muted]="true" playsinline loop
         class="bg-video video-content w-full h-full object-cover transition-opacity">
         <source src="../../../assets/helfermitherzHeroBanner.mp4" type="video/mp4">
@@ -91,49 +87,51 @@
           <div class="hero-image-card">
             <div class="hero-image-content">
               <div class="hero-heart-wrapper">
-                <div class="hero-heart-glow"></div>
-                <!-- <svg class="hero-heart-icon" width="112" height="112" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-                </svg> -->
-                <h1 class="text-white">Request a Demo</h1>
-              </div>
-              <form>
-                <div class="row g-3">
-                  <div class="col-md-6">
-                    <div class="form-floating mb-3">
-                      <input type="text" class="form-control border-0 border-bottom rounded-0 px-0" id="name"
-                        placeholder="Name">
-                      <label for="name" class="px-0 text-white">Full Name</label>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-floating mb-3">
-                      <input type="email" class="form-control border-0 border-bottom rounded-0 px-0" id="email"
-                        placeholder="Email">
-                      <label for="email" class="px-0 text-white">Email Address</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-floating mb-4">
-                      <input type="text" class="form-control border-0 border-bottom rounded-0 px-0" id="subject"
-                        placeholder="Subject">
-                      <label for="subject" class="px-0 text-white">Subject</label>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-floating mb-4">
-                      <textarea class="form-control border-0 border-bottom rounded-0 px-0" id="message"
-                        placeholder="Message" style="height: 120px"></textarea>
-                      <label for="message" class="px-0 text-white">Your Message</label>
-                    </div>
-                  </div>
-                  <div class="col-12 text-end">
-                    <button type="submit" class="btn btn-primary btn-lg rounded-pill px-5 shadow">
-                      Send Message <i class="bi bi-send-fill ms-2"></i>
-                    </button>
-                  </div>
-                </div>
-              </form>
+  <div class="hero-heart-glow"></div>
+  <h1 class="text-white">Kostenlose Beratung anfragen</h1>
+</div>
+
+<form>
+  <div class="row g-3">
+    <div class="col-md-6">
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control border-0 border-bottom rounded-0 px-0" id="name"
+          placeholder="Name">
+        <label for="name" class="px-0 text-white">Vollständiger Name</label>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control border-0 border-bottom rounded-0 px-0" id="email"
+          placeholder="E-Mail">
+        <label for="email" class="px-0 text-white">E-Mail-Adresse</label>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <div class="form-floating mb-4">
+        <input type="text" class="form-control border-0 border-bottom rounded-0 px-0" id="subject"
+          placeholder="Betreff">
+        <label for="subject" class="px-0 text-white">Betreff</label>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <div class="form-floating mb-4">
+        <textarea class="form-control border-0 border-bottom rounded-0 px-0" id="message"
+          placeholder="Nachricht" style="height: 120px"></textarea>
+        <label for="message" class="px-0 text-white">Ihre Nachricht</label>
+      </div>
+    </div>
+
+    <div class="col-12 text-end">
+      <button type="submit" class="btn btn-primary btn-lg rounded-pill px-5 shadow">
+        Nachricht senden <i class="bi bi-send-fill ms-2"></i>
+      </button>
+    </div>
+  </div>
+</form>
             </div>
           </div>
         </div>

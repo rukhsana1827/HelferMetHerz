@@ -42,3 +42,52 @@
         border-top: 0 !important
     }
 }
+
+/* Ensure the parent nav-item allows full width positioning */
+.mega-menu-static {
+  position: static !important;
+}
+
+/* Make dropdown full width */
+.mega-menu-content {
+  /* width: 100vw; */
+  left: 0;
+  right: 0;
+  top: 100%;
+  margin-top: 0;
+  border-radius: 0 0 1rem 1rem !important;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  transform: translateY(10px);
+}
+
+/* Hover effect for Desktop */
+@media (min-width: 992px) {
+  .nav-item.dropdown:hover .mega-menu-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+/* Styling for the lists inside the menu */
+.menu-service-list li {
+  font-size: 0.9rem;
+  padding: 4px 0;
+  color: #555;
+  display: flex;
+  align-items: center;
+}
+
+.menu-service-list i {
+  color: #28a745; /* Green checkmark color */
+  margin-right: 8px;
+  font-size: 1.1rem;
+}
+
+/* Remove arrow from dropdown toggle if preferred */
+.dropdown-toggle::after {
+  display: none;
+}

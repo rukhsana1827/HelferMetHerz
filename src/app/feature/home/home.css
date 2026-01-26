@@ -1452,7 +1452,6 @@ body {
 .animate-fade-up {
   opacity: 0;
   transform: translateY(50px);
-  /* Use a cubic-bezier for a more 'natural' feel than ease-out */
   transition: opacity 1.2s ease, transform 1.0s cubic-bezier(0.2, 1, 0.3, 1);
   will-change: opacity, transform;
 }
