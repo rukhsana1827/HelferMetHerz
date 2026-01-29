@@ -10,6 +10,8 @@
       <div class="video-overlay"></div>
     </div>
 
+    <div class="dark-overlay"></div>
+
     <!-- Decorative background patterns -->
     <div class="hero-decorative-bg">
       <div class="hero-blur hero-blur-1"></div>
@@ -31,7 +33,7 @@
       </svg>
     </div>
 
-    <div class="container">
+    <div class="container content">
       <div class="hero-grid">
         <!-- Hero Content -->
         <div class="hero-content">
@@ -93,7 +95,7 @@
 
 <form>
   <div class="row g-3">
-    <div class="col-md-6">
+    <div class="col-md-12">
       <div class="form-floating mb-3">
         <input type="text" class="form-control border-0 border-bottom rounded-0 px-0" id="name"
           placeholder="Name">
@@ -101,7 +103,7 @@
       </div>
     </div>
 
-    <div class="col-md-6">
+    <div class="col-md-12">
       <div class="form-floating mb-3">
         <input type="email" class="form-control border-0 border-bottom rounded-0 px-0" id="email"
           placeholder="E-Mail">
@@ -125,10 +127,23 @@
       </div>
     </div>
 
-    <div class="col-12 text-end">
+    <div class="col-12 text-center">
       <button type="submit" class="btn btn-primary btn-lg rounded-pill px-5 shadow">
         Nachricht senden <i class="bi bi-send-fill ms-2"></i>
       </button>
+    </div>
+
+    <div class="form-check text-start mt-4 align-items-center d-flex">
+      <input class="form-check-input" type="checkbox" id="privacyPolicy">
+      <label class="form-check-label text-white" for="privacyPolicy">
+         &nbsp;Ich stimme der <a href="/privacy-policy" class="text-white">Datenschutz</a>
+      </label>
+    </div>
+    <div class="form-check mb-4 text-start  d-flex">
+      <input class="form-check-input mt-1" type="checkbox" id="updates">
+      <label class="form-check-label text-white" for="updates">
+        &nbsp;Erhalten Sie unsere neuesten und regelmäßigen Updates
+      </label>
     </div>
   </div>
 </form>
@@ -138,6 +153,33 @@
       </div>
     </div>
   </section>
+
+  <section class="logo-section py-5 bg-light overflow-hidden">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h3 class="section-title">Unsere Partner</h3>
+      <h2 class="fw-bold">Vertrauen von führenden Unternehmen</h2>
+    </div>
+
+    <div class="logo-slider">
+      <div class="logo-track">
+        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 1"></div>
+        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 2"></div>
+        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 3"></div>
+        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 4"></div>
+        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 5"></div>
+        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 6"></div>
+
+        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 1"></div>
+        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 2"></div>
+        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 3"></div>
+        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 4"></div>
+        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 5"></div>
+        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 6"></div>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- Introduction Section -->
   <section class="intro-section animate-fade-up">
@@ -557,32 +599,7 @@
     </div>
   </section>
 
-  <section class="logo-section py-5 bg-light overflow-hidden">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h3 class="section-title">Unsere Partner</h3>
-      <h2 class="fw-bold">Vertrauen von führenden Unternehmen</h2>
-    </div>
-
-    <div class="logo-slider">
-      <div class="logo-track">
-        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 1"></div>
-        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 2"></div>
-        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 3"></div>
-        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 4"></div>
-        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 5"></div>
-        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 6"></div>
-
-        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 1"></div>
-        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 2"></div>
-        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 3"></div>
-        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 4"></div>
-        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 5"></div>
-        <div class="logo-item"><img src="../../../assets/helfermitherz.png" alt="Client 6"></div>
-      </div>
-    </div>
-  </div>
-</section>
+  
   <!-- Process Steps -->
   <section class="process-section animate-fade-up">
     <div class="container">

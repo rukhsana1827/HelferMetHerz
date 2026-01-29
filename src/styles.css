@@ -1,11 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 .bg-primary, .btn-primary {
-    background: linear-gradient(to right, #4f408a, #68419c, #96359b, #be09c7) !important;
+    background:  linear-gradient(to right,   #0b3f7a,   #ee3f58) !important;
     border-color: transparent !important;
 }
-
+/* 0b3f7a */
+/* linear-gradient(to right, #4f408a, #68419c, #96359b, #be09c7) !important; */
+   
 .gradient-text-animated {
-  background: linear-gradient(45deg, #4f408a, #96359b, #be09c7);
+  background: linear-gradient(45deg, #0b3f7a, #68419c, #ee3f58);
+  /* background: linear-gradient(45deg, #4f408a, #96359b, #be09c7); */
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
