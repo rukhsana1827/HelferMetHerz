@@ -69,7 +69,7 @@
   .nav-item.dropdown:hover .mega-menu-content {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
+    transform: translateY(-30px);
     display:block;
   }
 }
