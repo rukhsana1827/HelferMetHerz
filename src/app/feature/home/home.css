@@ -314,9 +314,7 @@ body {
   padding: 0.75rem;
 }
 
-/* Introduction Section */
 .intro-section {
-  padding: 4rem 0 6rem;
   background: linear-gradient(to bottom, #F9F9F9, white);
   position: relative;
 }
@@ -543,19 +541,19 @@ body {
 }
 
 .service-card1 {
-  background-image: url('../../../assets/helfer4.png');
+  background-image: url('../../../assets/images/4.jpg');
 }
 
 .service-card2 {
-  background-image: url('../../../assets/helfer5.png');
+  background-image: url('../../../assets/images/5.jpg');
 }
 
 .service-card3 {
-  background-image: url('../../../assets/helfer6.png');
+  background-image: url('../../../assets/images/6.jpg');
 }
 
 .service-card4 {
-  background-image: url('../../../assets/helfer7.png');
+  background-image: url('../../../assets/images/7.jpg');
 }
 
 .service-card:hover {
@@ -715,7 +713,10 @@ body {
 /* Audience Section */
 .audience-section {
   padding: 4rem 0 5rem;
-  background: linear-gradient(135deg, #009FDA, #0099dd, #009FDA);
+  background-image: url('../../../assets/images/20.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background: linear-gradient(135deg, #009FDA, #0099dd, #009FDA); */
   color: white;
   position: relative;
   overflow: hidden;
@@ -772,7 +773,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgb(0 0 0 / 20%);
   backdrop-filter: blur(12px);
   border-radius: 9999px;
   padding: 0.5rem 1rem;
@@ -795,7 +796,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  background: rgba(255, 255, 255, 0.15);
+  background: #0004085e;
   backdrop-filter: blur(12px);
   border-radius: 0.75rem;
   padding: 1.25rem;
@@ -806,7 +807,7 @@ body {
 }
 
 .audience-card:hover {
-  background: rgba(255, 255, 255, 0.25);
+  background: #000000;
   transform: scale(1.05);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
@@ -1565,22 +1566,24 @@ body {
   z-index: 2;
   background-size: cover;
   background-position: center;
+  height: 250px;
 }
 
 .feat-card1 {
-  background-image: url('../../../assets/helfer1.png');
+  background-image: url('../../../assets/images/2.jpg');
 }
 
 .feat-card2 {
-  background-image: url('../../../assets/helfer2.png');
+  background-image: url('../../../assets/images/1.jpg');
 }
 
 .feat-card3 {
-  background-image: url('../../../assets/helfer3.png');
+  background-image: url('../../../assets/images/3.jpg');
 }
 
 /* clients */
-.logo-slider {
+.logo-slider,
+.logo-slider2 {
   position: relative;
   width: 100%;
   padding: 20px 0;
@@ -1589,36 +1592,102 @@ body {
 
 .logo-track {
   display: flex;
-  width: calc(250px * 12);
+  /* width: calc(250px * 12); */
   /* Width of one logo * total number of logos */
   animation: scroll 30s linear infinite;
 }
 
 /* Pause animation on hover for better UX */
-.logo-slider:hover .logo-track {
+.logo-slider:hover .logo-track,
+.logo-slider2:hover .logo-track {
   animation-play-state: paused;
 }
 
-.logo-item {
+/* .logo-item {
   width: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 40px;
+} */
+.logo-item {
+  /* overflow: hidden;  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  padding: 0 40px;
+  height: 100px;
+  /* Adjust based on your logo size */
 }
 
 .logo-item img {
   width: 100%;
   max-width: 150px;
-  filter: grayscale(100%);
-  opacity: 0.6;
+  opacity: 1;
+  /* filter: grayscale(100%); */
+  /* opacity: 0.6; */
   transition: all 0.3s ease;
 }
 
-.logo-item img:hover {
-  filter: grayscale(0%);
+.logo-slider2 .logo-track {
+  display: flex;
   opacity: 1;
-  transform: scale(1.1);
+  animation: scroll2 30s linear infinite;
+  animation-delay: -15s;
+}
+
+.logo-item {
+  overflow: hidden;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-wrapper img {
+  filter: grayscale(100%);
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    filter 0.3s ease,
+    opacity 0.3s ease;
+
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.logo-item .image-wrapper img {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.logo-item:hover img {
+  animation: shuttleTop 0.6s forwards;
+  filter: grayscale(0%);
+}
+
+@keyframes shuttleTop {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  49% {
+    transform: translateY(100%);
+    /* Disappear down */
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(-100%);
+    /* Instantly teleport to top (hidden) */
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    /* Drop in from top */
+    opacity: 1;
+  }
 }
 
 /* Animation Keyframes */
@@ -1632,6 +1701,18 @@ body {
   }
 
   /* Moves by exactly half the track width */
+}
+
+@keyframes scroll2 {
+  0% {
+    /* Start shifted to the left (hidden) */
+    transform: translateX(calc(-250px * 6));
+  }
+
+  100% {
+    /* Move back to the original starting position */
+    transform: translateX(0);
+  }
 }
 
 /* Responsive adjustments */
@@ -1686,11 +1767,11 @@ body {
   line-height: 1.6;
 }
 
-.new-section1 img{
+.new-section1 img {
   border-bottom-left-radius: 230px;
-    width: 80%;
-    border-top-left-radius: 230px;
-    border-top-right-radius: 230px;
+  width: 80%;
+  border-top-left-radius: 230px;
+  border-top-right-radius: 230px;
 }
 
 .stats-container {
@@ -1703,14 +1784,23 @@ body {
     font-weight: bold;
     font-size: 0.8rem;
     transition: transform 0.2s;
-    &:hover { transform: scale(1.05); }
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 
   .journey-title {
     font-size: 2.5rem;
     font-weight: 700;
-    .text-blue { color: #3041c7; }
-    .text-pink { color: #d946ef; }
+
+    .text-blue {
+      color: #3041c7;
+    }
+
+    .text-pink {
+      color: #d946ef;
+    }
   }
 
   .stat-number {
@@ -1728,8 +1818,13 @@ body {
 
 /* Mobile Adjustments */
 @media (max-width: 768px) {
-  .journey-title { font-size: 1.8rem; }
-  .stat-number { font-size: 2rem; }
+  .journey-title {
+    font-size: 1.8rem;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
 }
 
 
@@ -1747,7 +1842,6 @@ body {
 
   .faq-item {
     background: white;
-    border: 1px solid #e2e8f0;
     border-radius: 16px;
     overflow: hidden;
     transition: all 0.3s ease;
@@ -1765,8 +1859,10 @@ body {
         transform: rotate(45deg);
         color: #2563eb;
       }
-      
-      .line-v { opacity: 0; }
+
+      .line-v {
+        opacity: 0;
+      }
     }
   }
 
@@ -1808,6 +1904,9 @@ body {
     color: #2563eb;
     text-decoration: none;
     font-weight: 600;
-    &:hover { text-decoration: underline; }
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

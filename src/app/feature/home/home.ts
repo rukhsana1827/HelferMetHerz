@@ -41,6 +41,16 @@ faqs = [
     question: 'Werden die Kosten von der Pflegekasse übernommen?', 
     answer: 'Ja, ab Pflegegrad 1 können viele unserer Leistungen über den Entlastungsbetrag abgerechnet werden.',
     open: false 
+  },
+  {
+    question: 'Wie wählen Sie Ihre Helfer aus? Antwort?',
+    answer: 'Unsere Helfer durchlaufen einen sorgfältigen Auswahlprozess, der Interviews, Referenzprüfungen und Hintergrundüberprüfungen umfasst.',
+    open: false 
+  },
+  {
+    'question': 'Kann ich die Helfer vorab kennenlernen?',
+    'answer': 'Ja, wir arrangieren gerne ein unverbindliches Kennenlerngespräch, damit Sie sich ein Bild von der Person machen können.',
+    open: false
   }
 ];
   ngOnInit() {
