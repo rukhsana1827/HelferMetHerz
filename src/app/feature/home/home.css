@@ -1086,7 +1086,7 @@ body {
 
 .trust-cta-card {
   text-align: center;
-  background: linear-gradient(135deg, #4A3B89, #5a4a99, #6b5bb9);
+  background:linear-gradient(135deg, #4A3B89, #5a4a99ba, #6b5bb963);
   color: white;
   border-radius: 1.5rem;
   padding: 2.5rem;

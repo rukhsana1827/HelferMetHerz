@@ -26,7 +26,8 @@
 }
 
 .service-box p{
-  margin-bottom: 5px !important;
+  margin-bottom: 15px !important;
+  font-size: 1.4rem;
 }
 
 @keyframes zoom-in-out {
