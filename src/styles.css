@@ -58,7 +58,9 @@ border: 0 !important;
 .service4{
   background-image: url('assets/banners/6.jpg');
 }
-
+.whyus-banner {
+  background-image: url('assets/banners/7.jpg');
+}
 .dark-overlay {
   width: 100%;
   height: 100%;
