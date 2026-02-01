@@ -40,3 +40,7 @@
 .animated-image {
   animation: 5s ease-in-out infinite zoom-in-out;
 }
+
+.small {
+  font-size: 1.4rem;
+}
