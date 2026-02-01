@@ -1,4 +1,10 @@
 /* Base link style */
+.navbar {
+width: 100%;
+    z-index: 1;
+    position: fixed;
+    background: white;
+}
 .nav-link {
     /* font-weight: 500; */
     color: #555 !important;
@@ -63,6 +69,12 @@
   transition: all 0.3s ease;
   transform: translateY(10px);
 }
+.mega-menu-content.show {
+  opacity: 1;
+  visibility: visible;
+  display: block;
+  transform: translateY(0);
+}
 
 /* Hover effect for Desktop */
 @media (min-width: 992px) {
@@ -80,6 +92,8 @@
     visibility: visible;
     transform: translateY(0);
     display: block;
+    height: 400px;
+    overflow-y: auto;
   }
   
 }

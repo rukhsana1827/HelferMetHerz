@@ -41,7 +41,7 @@ border: 0 !important;
 }
 
 .service-banner {
-  
+  position: relative;
   height: 400px;
   background-size: cover;
 }

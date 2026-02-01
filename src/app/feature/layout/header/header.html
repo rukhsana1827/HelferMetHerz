@@ -14,14 +14,12 @@
           <a class="nav-link px-2" routerLink="/home" routerLinkActive="active">Startseite</a>
         </li>
         
-        <!-- <li class="nav-item mx-3">
-          <a class="nav-link px-2" routerLink="/services" routerLinkActive="active">Services</a>
-        </li> -->
-        <li class="nav-item mx-3 dropdown mega-menu-static">
+       
+        <li class="nav-item mx-3 dropdown mega-menu-static" #servicesDropdown (mouseenter)="openMegaMenu()">
           <a class="nav-link px-2 dropdown-toggle" routerLinkActive="active">
             Leistungen
           </a>
-          <div class="dropdown-menu mega-menu-content shadow-lg border-0">
+          <div class="dropdown-menu mega-menu-content shadow-lg border-0" [class.show]="isMegaMenuOpen" (click)="$event.stopPropagation()">
             <div class="container py-4">
               <div class="row g-4">
                 <div class="col-lg-3 border-end">
@@ -32,7 +30,7 @@
                     <li><i class="bi bi-check2-short"></i> Einkäufe & Besorgungen</li>
                     <li><i class="bi bi-check2-short"></i> Demenzfreundliche Hilfe</li>
                   </ul>
-                 <button class="btn-primary btn"> <a routerLink="/services/service-alltagsbegleitung" class="text-light text-decoration-none small fw-bold mt-2">Mehr erfahren →</a></button>
+                 <button class="btn-primary btn"> <a routerLink="/services/service-alltagsbegleitung" (click)="closeMegaMenu(); $event.stopPropagation()" class="text-light text-decoration-none small fw-bold mt-2">Mehr erfahren →</a></button>
                 </div>
 
                 <div class="col-lg-3 border-end">
@@ -43,7 +41,7 @@
                     <li><i class="bi bi-check2-short"></i> Aufräumen & Ordnung</li>
                     <li><i class="bi bi-check2-short"></i> Senioren-Entlastung</li>
                   </ul>
-                 <button class="btn-primary btn"> <a routerLink="/services/service-haushaltshilfe" class="text-light text-decoration-none small fw-bold mt-2">Mehr erfahren →</a></button>
+                 <button class="btn-primary btn"> <a routerLink="/services/service-haushaltshilfe" (click)="closeMegaMenu(); $event.stopPropagation()" class="text-light text-decoration-none small fw-bold mt-2">Mehr erfahren →</a></button>
                 </div>
 
                 <div class="col-lg-3 border-end">
@@ -54,7 +52,7 @@
                     <li><i class="bi bi-check2-short"></i> Einmalige Grundreinigung</li>
                     <li><i class="bi bi-check2-short"></i> Umzugsreinigung</li>
                   </ul>
-                  <button class="btn-primary btn"> <a routerLink="/services/service-hausreinigung" class="text-light text-decoration-none small fw-bold mt-2">Mehr erfahren →</a></button>
+                  <button class="btn-primary btn"> <a routerLink="/services/service-hausreinigung" (click)="closeMegaMenu(); $event.stopPropagation()"  class="text-light text-decoration-none small fw-bold mt-2">Mehr erfahren →</a></button>
                 </div>
 
                 <div class="col-lg-3">
@@ -65,7 +63,7 @@
                     <li><i class="bi bi-check2-short"></i> Hilfe bei Anträgen</li>
                     <li><i class="bi bi-check2-short"></i> Direkte Kassenabrechnung</li>
                   </ul>
-                 <button class="btn-primary btn">  <a routerLink="/services/service-kostenübernahme" class="text-light text-decoration-none small fw-bold mt-2 text-success">Beratung anfragen →</a></button>
+                 <button class="btn-primary btn">  <a routerLink="/services/service-kostenübernahme" (click)="closeMegaMenu(); $event.stopPropagation()"  class="text-light text-decoration-none small fw-bold mt-2 text-success">Beratung anfragen →</a></button>
                 </div>
               </div>
             </div>
