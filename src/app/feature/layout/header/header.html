@@ -9,14 +9,14 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarContent">
+    <div class="collapse navbar-collapse" id="navbarContent" #navbarCollapse>
       <ul class="navbar-nav mx-auto mb-2 mb-lg-0"> <li class="nav-item mx-3">
-          <a class="nav-link px-2" routerLink="/home" routerLinkActive="active">Startseite</a>
+          <a class="nav-link px-2" routerLink="/home" (click)="closeFullNavbar()" routerLinkActive="active">Startseite</a>
         </li>
         
        
         <li class="nav-item mx-3 dropdown mega-menu-static" #servicesDropdown (mouseenter)="openMegaMenu()">
-          <a class="nav-link px-2 dropdown-toggle" routerLinkActive="active">
+          <a class="nav-link px-2 dropdown-toggle" routerLinkActive="active" >
             Leistungen
           </a>
           <div class="dropdown-menu mega-menu-content shadow-lg border-0" [class.show]="isMegaMenuOpen" (click)="$event.stopPropagation()">
@@ -30,7 +30,7 @@
                     <li><i class="bi bi-check2-short"></i> Einkäufe & Besorgungen</li>
                     <li><i class="bi bi-check2-short"></i> Demenzfreundliche Hilfe</li>
                   </ul>
-                 <button class="btn-primary btn"> <a routerLink="/services/service-alltagsbegleitung" (click)="closeMegaMenu(); $event.stopPropagation()" class="text-light text-decoration-none small fw-bold mt-2">Mehr erfahren →</a></button>
+                 <button class="btn-primary btn"> <a routerLink="/services/service-alltagsbegleitung" (click)="closeMegaMenu(); $event.stopPropagation()" (click)="closeFullNavbar()" class="text-light text-decoration-none small fw-bold mt-2">Mehr erfahren →</a></button>
                 </div>
 
                 <div class="col-lg-3 border-end">
@@ -41,7 +41,7 @@
                     <li><i class="bi bi-check2-short"></i> Aufräumen & Ordnung</li>
                     <li><i class="bi bi-check2-short"></i> Senioren-Entlastung</li>
                   </ul>
-                 <button class="btn-primary btn"> <a routerLink="/services/service-haushaltshilfe" (click)="closeMegaMenu(); $event.stopPropagation()" class="text-light text-decoration-none small fw-bold mt-2">Mehr erfahren →</a></button>
+                 <button class="btn-primary btn"> <a routerLink="/services/service-haushaltshilfe" (click)="closeMegaMenu(); $event.stopPropagation()" (click)="closeFullNavbar()"  class="text-light text-decoration-none small fw-bold mt-2">Mehr erfahren →</a></button>
                 </div>
 
                 <div class="col-lg-3 border-end">
@@ -52,7 +52,7 @@
                     <li><i class="bi bi-check2-short"></i> Einmalige Grundreinigung</li>
                     <li><i class="bi bi-check2-short"></i> Umzugsreinigung</li>
                   </ul>
-                  <button class="btn-primary btn"> <a routerLink="/services/service-hausreinigung" (click)="closeMegaMenu(); $event.stopPropagation()"  class="text-light text-decoration-none small fw-bold mt-2">Mehr erfahren →</a></button>
+                  <button class="btn-primary btn"> <a routerLink="/services/service-hausreinigung" (click)="closeMegaMenu(); $event.stopPropagation()" (click)="closeFullNavbar()"   class="text-light text-decoration-none small fw-bold mt-2">Mehr erfahren →</a></button>
                 </div>
 
                 <div class="col-lg-3">
@@ -63,17 +63,17 @@
                     <li><i class="bi bi-check2-short"></i> Hilfe bei Anträgen</li>
                     <li><i class="bi bi-check2-short"></i> Direkte Kassenabrechnung</li>
                   </ul>
-                 <button class="btn-primary btn">  <a routerLink="/services/service-kostenübernahme" (click)="closeMegaMenu(); $event.stopPropagation()"  class="text-light text-decoration-none small fw-bold mt-2 text-success">Beratung anfragen →</a></button>
+                 <button class="btn-primary btn">  <a routerLink="/services/service-kostenübernahme" (click)="closeMegaMenu(); $event.stopPropagation()" (click)="closeFullNavbar()"   class="text-light text-decoration-none small fw-bold mt-2 text-success">Beratung anfragen →</a></button>
                 </div>
               </div>
             </div>
           </div>
         </li>
         <li class="nav-item mx-3">
-          <a class="nav-link px-2" routerLink="/why-us" routerLinkActive="active">Über uns</a>
+          <a class="nav-link px-2" routerLink="/why-us"(click)="closeFullNavbar()"  routerLinkActive="active">Über uns</a>
         </li>
         <li class="nav-item mx-3">
-          <a class="nav-link px-2" routerLink="/contact-us" routerLinkActive="active">Kontakt</a>
+          <a class="nav-link px-2" routerLink="/contact-us" (click)="closeFullNavbar()"  routerLinkActive="active">Kontakt</a>
         </li>
       </ul>
       
