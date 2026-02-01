@@ -134,13 +134,13 @@
                   </div>
 
                   <div class="form-check text-start mt-4 align-items-center d-flex">
-                    <input class="form-check-input" type="checkbox" id="privacyPolicy">
-                    <label class="form-check-label text-white" for="privacyPolicy">
+                    <input class="form-check-input" type="checkbox" id="privacyPolicy" checked>
+                    <label class="form-check-label text-white" for="privacyPolicy" >
                       &nbsp;Ich stimme der <a href="/privacy-policy" class="text-white">Datenschutz</a>
                     </label>
                   </div>
                   <div class="form-check mb-4 text-start  d-flex">
-                    <input class="form-check-input mt-1" type="checkbox" id="updates">
+                    <input class="form-check-input mt-1" type="checkbox" id="updates" checked>
                     <label class="form-check-label text-white" for="updates">
                       &nbsp;Erhalten Sie unsere neuesten und regelmäßigen Updates
                     </label>
@@ -246,7 +246,7 @@
     <div class="intro-wave"></div>
 
     <div class="container">
-      <div class="intro-content">
+      <div class="intro-content pt-4">
         <!-- Decorative icon -->
         <div class="intro-icon-wrapper">
           <div class="intro-icon-badge">
@@ -544,6 +544,8 @@
 
   <!-- Target Audience Section -->
   <section class="audience-section animate-fade-up">
+      <div class="dark-overlay"></div>
+
     <div class="audience-blur-bg">
       <div class="audience-blur audience-blur-1"></div>
       <div class="audience-blur audience-blur-2"></div>
@@ -561,7 +563,7 @@
             </svg>
             <span>Individuelle Betreuung</span>
           </div>
-          <h2 class="audience-title bg-light"><span class=" gradient-text-animated px-3 fw-5 rounded-pill">Für wen sind
+          <h2 class="audience-title"><span class=" text-white fw-5">Für wen sind
               wir da?</span></h2>
         </div>
 
@@ -938,7 +940,7 @@
             </svg>
             <p class="trust-cta-text">
               Wir liefern nicht nur Dienstleistungen –
-              <span class="trust-cta-highlight">wir geben Ihnen Sicherheit</span> und Entlastung
+              <span class="trust-cta-highlight bg-light rounded px-3">wir geben Ihnen Sicherheit</span> und Entlastung
             </p>
             <button class="btn btn-primary" (click)="scrollToForm()">
               Rückruf anfordern
@@ -1026,7 +1028,7 @@
   </section>
 
   <!-- Footer Section -->
-  <footer class="footer-section animate-fade-up">
+  <!-- <footer class="footer-section animate-fade-up">
     <div class="footer-blur-bg">
       <div class="footer-blur footer-blur-1"></div>
       <div class="footer-blur footer-blur-2"></div>
@@ -1055,5 +1057,5 @@
         Kontaktieren Sie uns heute
       </button>
     </div>
-  </footer>
+  </footer> -->
 </div>

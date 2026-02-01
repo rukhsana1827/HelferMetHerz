@@ -61,6 +61,10 @@ border: 0 !important;
 .whyus-banner {
   background-image: url('assets/banners/7.jpg');
 }
+
+.contactus-banner {
+  background-image: url('assets/banners/8.jpg');
+}
 .dark-overlay {
   width: 100%;
   height: 100%;
