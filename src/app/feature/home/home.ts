@@ -26,11 +26,11 @@ private animated = false;
   ) {}
 
   stats = [
-    { label: 'Attendees', target: 102, suffix: 'k+', current: 0 },
-    { label: 'Events Executed', target: 5000, suffix: '+', current: 0 },
-    { label: 'Customers', target: 500, suffix: '+', current: 0 },
-    { label: 'German Cities', target: 30, suffix: '+', current: 0 }
-  ];
+  { label: 'Besucher', target: 102, suffix: 'k+', current: 0 },
+  { label: 'Einsätze', target: 5000, suffix: '+', current: 0 },
+  { label: 'Zufriedene Kunden', target: 500, suffix: '+', current: 0 },
+  { label: 'Deutsche Städte', target: 30, suffix: '+', current: 0 }
+];
 faqs = [
   { 
     question: 'Wie schnell finde ich einen Helfer?', 

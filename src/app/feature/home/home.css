@@ -226,7 +226,7 @@ body {
 
 .hero-image-wrapper {
   position: relative;
-  height: 550px;
+  height: 600px;
 }
 
 .hero-image-blur {
@@ -1003,7 +1003,11 @@ body {
 /* Trust Section */
 .trust-section {
   padding: 4rem 0 6rem;
-  background: white;
+  /* background: white; */
+  background-image: url('../../../assets/health.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .trust-content {
@@ -1475,7 +1479,7 @@ body {
   }
 
   .hero-image-wrapper {
-    height: 680px;
+    height: 550px;
   }
 
   .hero-title {
@@ -1646,13 +1650,13 @@ body {
 }
 
 .image-wrapper img {
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
     filter 0.3s ease,
     opacity 0.3s ease;
 
   transform: translateY(100%);
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 .logo-item .image-wrapper img {
@@ -1909,4 +1913,91 @@ body {
       text-decoration: underline;
     }
   }
+}
+
+.partner-section {
+  background-color: #ffffff;
+  padding: 80px 0;
+
+  .partner-badge {
+    background: rgb(248 248 248 / 10%);
+    color: #ffffff;
+    padding: 6px 16px;
+    border-radius: 100px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .title-underline {
+    width: 50px;
+    height: 3px;
+    background: #2563eb;
+    margin-top: 10px;
+    border-radius: 2px;
+  }
+
+  .partner-card {
+    display: block;
+    text-decoration: none;
+    border: 1px solid #e2e8f0;
+    padding: 40px;
+    border-radius: 24px;
+    transition: all 0.4s ease;
+    color: inherit;
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+      border-color: #ffffff;
+      background: rgb(79, 78, 78);
+
+      .partner-link {
+        color: #ffffff;
+      }
+    }
+
+    .partner-logo-container {
+      margin-bottom: 25px;
+
+      .partner-logo {
+        max-width: 250px;
+        height: auto;
+        /* filter: grayscale(20%); */
+        transition: filter 0.3s;
+      }
+    }
+
+    &:hover .partner-logo {
+      filter: grayscale(0%);
+    }
+
+    .partner-name {
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .partner-text {
+      color: #e6e7e9;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .partner-link {
+      color: #fdfdfd;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: color 0.3s;
+    }
+  }
+}
+
+
+.shadow-effect {
+  background: #bfddff57;
+  height: 150px;
+  width: 150px;
+  filter: blur(8px);
+  border-radius: 100px;
 }
