@@ -49,6 +49,7 @@
   z-index: auto !important;
 }
 
-/* .container-width {
-    background-image: url('../../../assets/contact-bg.jpg');
-} */
+li .fi {
+  color: #009fda;
+  font-size: larger;
+}
