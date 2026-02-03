@@ -53,3 +53,87 @@ li .fi {
   color: #009fda;
   font-size: larger;
 }
+
+.city {
+  background-image: url('/assets/images/rostock.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.city .card{
+      background: #ffffffd4;
+}
+
+.location-section {
+  background: #958b9bba;
+    border-radius: 20px;
+
+  .location-card {
+    background: #ffffffc3;
+    border-radius: 20px;
+    padding: 25px;
+    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 45px rgba(79, 64, 138, 0.1);
+      border-color: #4f408a;
+    }
+
+    &.highlight {
+      background: linear-gradient(145deg, #ffffff, #f3f0ff);
+      border-left: 4px solid #4f408a;
+    }
+  }
+
+  .card-header-modern {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #eee;
+
+    i {
+      font-size: 1.5rem;
+      color: #4f408a;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin: 0;
+      color: #2d3436;
+    }
+  }
+
+  .location-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+
+    li {
+      display: flex;
+      align-items: center;
+      font-size: 0.95rem;
+      color: #636e72;
+      
+      &::before {
+        content: "•";
+        color: #4f408a;
+        font-weight: bold;
+        margin-right: 10px;
+      }
+
+      span {
+        transition: color 0.2s;
+        &:hover { color: #4f408a; }
+      }
+    }
+  }
+}
