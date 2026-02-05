@@ -26,14 +26,27 @@
             <div class="p-4">
               <div class="row g-4">
                 <div class="col-lg-2 border-end" style="display: grid;">
-                  <h6 class="fw-bold text-danger mb-3">Alltagsbegleitung</h6>
+                  <h6 class="fw-bold text-success mb-3">Kostenübernahme</h6>
                   <ul class="list-unstyled menu-service-list">
-                    <li><i class="bi bi-check2-short"></i> Begleitung zu Terminen</li>
-                    <li><i class="bi bi-check2-short"></i> Spaziergänge & Aktivitäten</li>
-                    <li><i class="bi bi-check2-short"></i> Einkäufe & Besorgungen</li>
-                    <li><i class="bi bi-check2-short"></i> Demenzfreundliche Hilfe</li>
+                    <li><i class="bi bi-check2-short"></i> Beratung zu Ansprüchen</li>
+                    <li><i class="bi bi-check2-short"></i> Hilfe bei Anträgen</li>
+                    <li><i class="bi bi-check2-short"></i> Direkte Kassenabrechnung</li>
                   </ul>
-                  <button class="btn-primary btn mt-auto"> <a routerLink="/services/service-alltagsbegleitung"
+                  <button class="btn-primary btn mt-auto"> <a routerLink="/services/service-kostenübernahme"
+                      (click)="closeMegaMenu(); $event.stopPropagation()" (click)="closeFullNavbar()"
+                      class="text-light text-decoration-none small fw-bold mt-2 text-success">Beratung anfragen
+                      →</a></button>
+                </div>
+
+                <div class="col-lg-2 border-end" style="display: grid;">
+                  <h6 class="fw-bold text-warning mb-3">Hausreinigung</h6>
+                  <ul class="list-unstyled menu-service-list">
+                    <li><i class="bi bi-check2-short"></i> Unterhaltsreinigung</li>
+                    <li><i class="bi bi-check2-short"></i> Fensterreinigung</li>
+                    <li><i class="bi bi-check2-short"></i> Einmalige Grundreinigung</li>
+                    <li><i class="bi bi-check2-short"></i> Umzugsreinigung</li>
+                  </ul>
+                  <button class="btn-primary btn mt-auto"> <a routerLink="/services/service-hausreinigung"
                       (click)="closeMegaMenu(); $event.stopPropagation()" (click)="closeFullNavbar()"
                       class="text-light text-decoration-none small fw-bold mt-2">Mehr erfahren →</a></button>
                 </div>
@@ -52,35 +65,20 @@
                 </div>
 
                 <div class="col-lg-2 border-end" style="display: grid;">
-                  <h6 class="fw-bold text-warning mb-3">Hausreinigung</h6>
+                  <h6 class="fw-bold text-danger mb-3">Alltagsbegleitung</h6>
                   <ul class="list-unstyled menu-service-list">
-                    <li><i class="bi bi-check2-short"></i> Unterhaltsreinigung</li>
-                    <li><i class="bi bi-check2-short"></i> Fensterreinigung</li>
-                    <li><i class="bi bi-check2-short"></i> Einmalige Grundreinigung</li>
-                    <li><i class="bi bi-check2-short"></i> Umzugsreinigung</li>
+                    <li><i class="bi bi-check2-short"></i> Begleitung zu Terminen</li>
+                    <li><i class="bi bi-check2-short"></i> Spaziergänge & Aktivitäten</li>
+                    <li><i class="bi bi-check2-short"></i> Einkäufe & Besorgungen</li>
+                    <li><i class="bi bi-check2-short"></i> Demenzfreundliche Hilfe</li>
                   </ul>
-                  <button class="btn-primary btn mt-auto"> <a routerLink="/services/service-hausreinigung"
+                  <button class="btn-primary btn mt-auto"> <a routerLink="/services/service-alltagsbegleitung"
                       (click)="closeMegaMenu(); $event.stopPropagation()" (click)="closeFullNavbar()"
                       class="text-light text-decoration-none small fw-bold mt-2">Mehr erfahren →</a></button>
                 </div>
 
                 <div class="col-lg-2 border-end" style="display: grid;">
-                  <h6 class="fw-bold text-success mb-3">Kostenübernahme</h6>
-                  <!-- <p class="small text-muted mb-2">Nutzen Sie Ihren Entlastungsbetrag (§45b SGB XI).</p> -->
-                  <ul class="list-unstyled menu-service-list">
-                    <li><i class="bi bi-check2-short"></i> Beratung zu Ansprüchen</li>
-                    <li><i class="bi bi-check2-short"></i> Hilfe bei Anträgen</li>
-                    <li><i class="bi bi-check2-short"></i> Direkte Kassenabrechnung</li>
-                  </ul>
-                  <button class="btn-primary btn mt-auto"> <a routerLink="/services/service-kostenübernahme"
-                      (click)="closeMegaMenu(); $event.stopPropagation()" (click)="closeFullNavbar()"
-                      class="text-light text-decoration-none small fw-bold mt-2 text-success">Beratung anfragen
-                      →</a></button>
-                </div>
-
-                <div class="col-lg-2 border-end" style="display: grid;">
                   <h6 class="fw-bold text-info mb-3">Babysitten</h6>
-                  <!-- <p class="small text-muted mb-2">Verlässliche Betreuung für Ihr Kind im eigenen Zuhause.</p> -->
                   <ul class="list-unstyled menu-service-list">
                     <li><i class="bi bi-check2-short"></i> Altersgerechte Betreuung</li>
                     <li><i class="bi bi-check2-short"></i> Spielen & Beschäftigung</li>

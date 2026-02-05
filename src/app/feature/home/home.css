@@ -534,6 +534,7 @@ body {
   background-size: cover;
   transition: all 0.3s ease;
   overflow: hidden;
+  background-position: center;
 }
 
 .service-card:hover .btn-outline {
@@ -545,7 +546,7 @@ body {
 }
 
 .service-card2 {
-  background-image: url('../../../assets/images/5.jpg');
+  background-image: url('../../../assets/portfolio/8.jpg');
 }
 
 .service-card3 {
@@ -554,6 +555,14 @@ body {
 
 .service-card4 {
   background-image: url('../../../assets/images/7.jpg');
+}
+
+.service-card5 {
+  background-image: url('../../../assets/portfolio/13.jpg');
+}
+
+.service-card6 {
+  background-image: url('../../../assets/portfolio/16.jpg');
 }
 
 .service-card:hover {
@@ -1416,7 +1425,7 @@ body {
 .animate-fade-up {
   opacity: 0;
   transform: translateY(50px);
-  transition: opacity 1.2s ease, transform 1.0s cubic-bezier(0.2, 1, 0.3, 1);
+  transition: opacity .9s ease, transform .5s cubic-bezier(0.2, 1, 0.3, 1);
   will-change: opacity, transform;
 }
 
@@ -1479,7 +1488,7 @@ body {
   height: 250px;
 }
 
-.feat-card1 {
+/* .feat-card1 {
   background-image: url('../../../assets/images/2.jpg');
 }
 
@@ -1489,7 +1498,7 @@ body {
 
 .feat-card3 {
   background-image: url('../../../assets/images/3.jpg');
-}
+} */
 
 /* clients */
 .logo-slider,
