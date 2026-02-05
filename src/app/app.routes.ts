@@ -40,6 +40,10 @@ export const routes: Routes = [
                 ]
             },
             {
+                path: 'portfolio',
+                loadComponent: () => import('./feature/portfolio/portfolio').then(m => m.Portfolio)
+            },
+            {
                 path: 'why-us',
                 loadComponent: () => import('./feature/why-us/why-us').then(m => m.WhyUs)
             },
