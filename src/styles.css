@@ -57,53 +57,54 @@
 }
 
 .service1 {
-  background-image: url('assets/banners/service/mob4.jpg') !important;
+  background-image: url('assets/banners/service/serv4.jpg');
 }
 
 .service2 {
-  background-image: url('assets/banners/service/mob2.jpg') !important;
+  background-image: url('assets/banners/service/serv2.jpg');
 }
 
 .service3 {
-  background-image: url('assets/banners/service/mob3.jpg') !important;
+  background-image: url('assets/banners/service/serv3.jpg');
 }
 
 .service4 {
-  background-image: url('assets/banners/service/mob1.jpg') !important;
+  background-image: url('assets/banners/service/serv1.jpg');
 }
 
 .service5 {
-  background-image: url('assets/banners/service/mob5.jpg') !important;
+  background-image: url('assets/banners/service/serv5.jpg');
 }
 
 .service6 {
-  background-image: url('assets/banners/service/mob6.jpg') !important;
+  background-image: url('assets/banners/service/serv6.jpg');
 }
 
 @media (max-width: 576px) {
   .service1 {
-    background-image: url('assets/banners/service/serv4.jpg');
+    background-image: url('assets/banners/service/mob4.jpg');
   }
 
   .service2 {
-    background-image: url('assets/banners/service/serv2.jpg');
+    background-image: url('assets/banners/service/mob2.jpg');
   }
 
   .service3 {
-    background-image: url('assets/banners/service/serv3.jpg');
+    background-image: url('assets/banners/service/mob3.jpg');
   }
 
   .service4 {
-    background-image: url('assets/banners/service/serv1.jpg');
+    background-image: url('assets/banners/service/mob1.jpg');
   }
 
   .service5 {
-    background-image: url('assets/banners/service/serv5.jpg');
+    background-image: url('assets/banners/service/mob5.jpg');
   }
 
   .service6 {
-    background-image: url('assets/banners/service/serv6.jpg');
+    background-image: url('assets/banners/service/mob6.jpg');
   }
+
 }
 
 .whyus-banner {
