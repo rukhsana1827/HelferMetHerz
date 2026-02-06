@@ -1,10 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-.bg-primary, .btn-primary {
-    background:  linear-gradient(to right,   #0b3f7a, #2396d7, #c71933,  #ee3f58) !important;
-    border-color: transparent !important;
+.bg-primary,
+.btn-primary {
+  background: linear-gradient(to right, #0b3f7a, #2396d7, #c71933, #ee3f58) !important;
+  border-color: transparent !important;
 }
 
-   
+
 .gradient-text-animated {
   background: linear-gradient(45deg, #0b3f7a, #68419c, #ee3f58);
   /* background: linear-gradient(45deg, #4f408a, #96359b, #be09c7); */
@@ -15,11 +16,13 @@
 }
 
 @keyframes shine {
-  to { background-position: 200% center; }
+  to {
+    background-position: 200% center;
+  }
 }
 
 .btn .bg-primary {
-border: 0 !important;
+  border: 0 !important;
 }
 
 .btn-primary:hover {
@@ -32,12 +35,19 @@ border: 0 !important;
 }
 
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(40px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.form-floating > textarea:focus ~ label::after {
-    background: none !important;
+.form-floating>textarea:focus~label::after {
+  background: none !important;
 }
 
 .service-banner {
@@ -45,25 +55,57 @@ border: 0 !important;
   height: 400px;
   background-size: cover;
 }
-.service1{
-  background-image: url('assets/banners/1.jpg');
+
+.service1 {
+  background-image: url('assets/banners/service/mob4.jpg') !important;
 }
 
-.service2{
-  background-image: url('assets/banners/2.jpg');
+.service2 {
+  background-image: url('assets/banners/service/mob2.jpg') !important;
 }
-.service3{
-  background-image: url('assets/banners/3.jpg');
+
+.service3 {
+  background-image: url('assets/banners/service/mob3.jpg') !important;
 }
-.service4{
-  background-image: url('assets/banners/6.jpg');
+
+.service4 {
+  background-image: url('assets/banners/service/mob1.jpg') !important;
 }
-.service5{
-  background-image: url('assets/banners/18.jpg');
+
+.service5 {
+  background-image: url('assets/banners/service/mob5.jpg') !important;
 }
-.service6{
-  background-image: url('assets/banners/19.jpg');
+
+.service6 {
+  background-image: url('assets/banners/service/mob6.jpg') !important;
 }
+
+@media (max-width: 576px) {
+  .service1 {
+    background-image: url('assets/banners/service/serv4.jpg');
+  }
+
+  .service2 {
+    background-image: url('assets/banners/service/serv2.jpg');
+  }
+
+  .service3 {
+    background-image: url('assets/banners/service/serv3.jpg');
+  }
+
+  .service4 {
+    background-image: url('assets/banners/service/serv1.jpg');
+  }
+
+  .service5 {
+    background-image: url('assets/banners/service/serv5.jpg');
+  }
+
+  .service6 {
+    background-image: url('assets/banners/service/serv6.jpg');
+  }
+}
+
 .whyus-banner {
   background-image: url('assets/banners/7.jpg');
 }
@@ -71,16 +113,19 @@ border: 0 !important;
 .contactus-banner {
   background-image: url('assets/banners/8.jpg');
 }
+
 .dark-overlay {
   width: 100%;
   height: 100%;
   background-color: rgb(0 0 0 / 21%);
 }
+
 .service-banner-content {
   position: absolute;
-    top: 120px;
-    right: 50px;
+  top: 120px;
+  right: 50px;
 }
+
 .section-title {
   font-size: 2.5rem;
   font-weight: 700;
