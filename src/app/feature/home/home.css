@@ -1561,7 +1561,7 @@ body {
 
 .logo-item {
   overflow: hidden;
-  height: 80px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
