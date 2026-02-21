@@ -9,4 +9,8 @@ import { RouterLink } from '@angular/router';
 })
 export class Footer {
 currentYear: number = new Date().getFullYear();
+ phoneNumber: string = '+49 176 3417690';
+callPhone() {
+      window.location.href = `tel:${this.phoneNumber}`;
+  }
 }

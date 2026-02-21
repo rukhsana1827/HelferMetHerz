@@ -60,11 +60,9 @@ export class Home {
   }
 
   callPhone() {
-    // if (this.phoneNumber?.internationalNumber) {
-      // const number = this.phoneNumber.internationalNumber.replace(/\s/g, '');
       window.location.href = `tel:${this.phoneNumber}`;
-    // }
   }
+  
   toggleFaq(index: number) {
     // Close others (Optional: comment out if you want multiple open)
     this.faqs.forEach((f, i) => {

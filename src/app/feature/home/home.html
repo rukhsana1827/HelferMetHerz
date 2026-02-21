@@ -75,7 +75,7 @@
                 Kostenlose Beratung anfragen
               
             </button>
-            <button class="btn btn-secondary" (click)="scrollToServices()">
+            <button class="btn btn-secondary" routerLink="/services/service-kostenübernahme">
               Unsere Leistungen ansehen
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -343,7 +343,7 @@
           </div>
         </div>
 
-        <button class="btn btn-primary intro-cta animate-fade-up" (click)="scrollToForm()">
+        <button class="btn btn-primary intro-cta animate-fade-up" (click)="callPhone()">
           Jetzt Gespräch vereinbaren
         </button>
       </div>
@@ -776,7 +776,7 @@
         </div>
 
         <div class="audience-cta animate-fade-up">
-          <button class="btn btn-white" (click)="scrollToForm()">
+          <button class="btn btn-white" (click)="callPhone()">
             Die richtige Unterstützung finden
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -857,7 +857,7 @@
           <p class="process-footer-text">
             <strong>Schnell, transparent, zuverlässig</strong> – so sollte Hilfe sein
           </p>
-          <button class="btn btn-primary" (click)="scrollToForm()">
+          <button class="btn btn-primary" (click)="callPhone()">
             Jetzt starten
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -1063,7 +1063,7 @@
               Wir liefern nicht nur Dienstleistungen –
               <span class="trust-cta-highlight bg-light rounded px-3">wir geben Ihnen Sicherheit</span> und Entlastung
             </p>
-            <button class="btn btn-primary" (click)="scrollToForm()">
+            <button class="btn btn-primary" (click)="callPhone()">
               Rückruf anfordern
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path
