@@ -37,7 +37,7 @@
     "install": "^0.13.0",
     "ngx-countries-dropdown": "^5.0.0",
     "ngx-intl-tel-input": "^17.0.0",
-    "ngx-material-intl-tel-input": "^21.0.0",
+    "ngx-material-intl-tel-input": "^20.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
   },
