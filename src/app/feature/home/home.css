@@ -2077,6 +2077,7 @@ body {
 }
 
 ::ng-deep .custom-phone-input .iti__country-list {
+  
   max-height: 100px !important;
   overflow-y: scroll !important
 }
