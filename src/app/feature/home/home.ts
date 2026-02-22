@@ -1,6 +1,6 @@
 import { ChangeDetectorRef, Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { CommonModule } from '@angular/common';
+
 import { RouterLink } from '@angular/router';
 import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
 declare var bootstrap: any;
@@ -11,11 +11,7 @@ import {
 } from "ngx-intl-tel-input";
 @Component({
   selector: 'app-home',
-  imports: [CommonModule,
-    FormsModule,
-    RouterLink,
-    NgxIntlTelInputModule
-  ],
+  imports: [FormsModule, RouterLink, NgxIntlTelInputModule],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })

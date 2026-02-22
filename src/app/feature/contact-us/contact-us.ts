@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component } from '@angular/core';
 import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -11,11 +11,7 @@ declare var bootstrap: any;
 @Component({
   selector: 'app-contact-us',
   standalone: true,
-  imports: [CommonModule,
-    FormsModule,
-    ReactiveFormsModule,
-    NgxIntlTelInputModule,
-  ],
+  imports: [FormsModule, ReactiveFormsModule, NgxIntlTelInputModule],
   templateUrl: './contact-us.html',
   styleUrl: './contact-us.css',
 })
