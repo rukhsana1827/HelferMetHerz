@@ -1,24 +1,30 @@
-import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
+import { ChangeDetectorRef, Component, ElementRef, Renderer2, ViewChild } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
+declare var bootstrap: any;
 
+import {
+  SearchCountryField,
+  NgxIntlTelInputModule
+} from "ngx-intl-tel-input";
 @Component({
   selector: 'app-home',
-  imports: [CommonModule, FormsModule,
-    RouterLink
+  imports: [CommonModule,
+    FormsModule,
+    RouterLink,
+    NgxIntlTelInputModule
   ],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
 export class Home {
   currentYear: number = new Date().getFullYear();
+  isSending = false;
+  SearchCountryField = SearchCountryField;
+  phone: any;
 
-  formData = {
-    name: '',
-    phone: '',
-    postalCode: ''
-  };
   @ViewChild('statsSection', { static: true }) statsSection!: ElementRef;
   private animated = false;
   phoneNumber: string = '+49 176 3417690';
@@ -60,9 +66,9 @@ export class Home {
   }
 
   callPhone() {
-      window.location.href = `tel:${this.phoneNumber}`;
+    window.location.href = `tel:${this.phoneNumber}`;
   }
-  
+
   toggleFaq(index: number) {
     // Close others (Optional: comment out if you want multiple open)
     this.faqs.forEach((f, i) => {
@@ -123,15 +129,34 @@ export class Home {
     }
   }
 
-  onSubmit(): void {
-    console.log('Form submitted:', this.formData);
-    alert('Vielen Dank! Wir werden uns bald bei Ihnen melden.');
-    this.formData = {
-      name: '',
-      phone: '',
-      postalCode: ''
+
+
+  public sendEmail(e: Event) {
+    e.preventDefault();
+    this.isSending = true;
+
+    const SERVICE_ID = 'service_aakpazk';
+    const TEMPLATE_ID = 'template_7gwu0ec';
+    const PUBLIC_KEY = 'tfJAMfc1-IPDHx3sk';
+
+    const templateParams = {
+      name: (document.querySelector('[name="name"]') as HTMLInputElement)?.value,
+      email: (document.querySelector('[name="email"]') as HTMLInputElement)?.value,
+      message: (document.querySelector('[name="message"]') as HTMLTextAreaElement)?.value,
+      phone: this.phone?.internationalNumber || ''
     };
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)
+      .then(() => {
+        this.isSending = false;
+        (e.target as HTMLFormElement).reset();
+        const modalElement = document.getElementById('successModal');
+        const modal = new bootstrap.Modal(modalElement!);
+        modal.show();
+      }, (error) => {
+        this.isSending = false;
+      });
   }
+
 
   ngAfterViewInit() {
     const observer = new IntersectionObserver((entries) => {

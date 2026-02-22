@@ -60,20 +60,21 @@ li .fi {
   background-position: center;
   background-repeat: no-repeat;
 }
-.city .card{
-      background: #ffffffd4;
+
+.city .card {
+  background: #ffffffd4;
 }
 
 .location-section {
   background: #958b9bba;
-    border-radius: 20px;
+  border-radius: 20px;
 
   .location-card {
     background: #ffffffc3;
     border-radius: 20px;
     padding: 25px;
-    border: 1px solid rgba(0,0,0,0.05);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
     transition: all 0.3s ease;
 
     &:hover {
@@ -122,7 +123,7 @@ li .fi {
       align-items: center;
       font-size: 0.95rem;
       color: #636e72;
-      
+
       &::before {
         content: "•";
         color: #4f408a;
@@ -132,8 +133,19 @@ li .fi {
 
       span {
         transition: color 0.2s;
-        &:hover { color: #4f408a; }
+
+        &:hover {
+          color: #4f408a;
+        }
       }
     }
   }
+}
+
+::ng-deep .custom-phone-input {
+  box-shadow: none !important;
+}
+
+::ng-deep .ngx-intl-tel-input input {
+  outline: none !important;
 }

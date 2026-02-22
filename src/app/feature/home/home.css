@@ -726,10 +726,9 @@ body {
 /* Audience Section */
 .audience-section {
   padding: 4rem 0 5rem;
-  background-image: url('../../../assets/images/20.jpg');
+  background-image: url('../../../assets/images/20.png');
   background-repeat: no-repeat;
   background-size: cover;
-  /* background: linear-gradient(135deg, #009FDA, #0099dd, #009FDA); */
   color: white;
   position: relative;
   overflow: hidden;
@@ -2043,4 +2042,41 @@ body {
       grid-row: span 1;
     }
   }
+}
+
+::ng-deep .custom-phone-input {
+  box-shadow: none !important;
+  background: transparent !important;
+  color: #ffffff !important;
+  background-color: transparent !important;
+}
+
+::ng-deep .ngx-intl-tel-input input {
+  background: transparent !important;
+  outline: none !important;
+  color: #ffffff !important;
+  background-color: transparent !important;
+}
+
+::ng-deep .custom-phone-input input::placeholder {
+  color: #ffffff !important;
+  opacity: 1 !important;
+}
+
+::ng-deep ngx-intl-tel-input.custom-phone-input input {
+  color: #fff !important;
+}
+
+::ng-deep ngx-intl-tel-input.custom-phone-input input::placeholder {
+  color: #fff !important;
+  opacity: 1 !important;
+}
+
+.form-floating>textarea:not(:placeholder-shown)~label::after {
+  background-color: transparent !important;
+}
+
+::ng-deep .custom-phone-input .iti__country-list {
+  max-height: 100px !important;
+  overflow-y: scroll !important
 }
